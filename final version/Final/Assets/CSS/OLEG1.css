@@ -1,0 +1,33 @@
+#second{
+    display: none;
+}
+main div{
+    display: inline-block;
+    padding-top:3px;
+    padding-left: 3px;
+}
+main p{
+    display: inline;
+}
+.controls{
+    /*Not every browser supports the width statement below*/
+    width:-webkit-fill-available;
+    margin: 2px;
+    border: 2px solid black;
+    padding: 5px;
+}
+.controls button{
+    padding: 2px;
+    background-color: antiquewhite;
+}
+button:hover, select:hover, option:hover{
+    background-color:black;
+    color: antiquewhite;
+}
+main form{
+    padding: 5px;
+}
+#important{
+    display: none;
+}
+

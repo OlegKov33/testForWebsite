@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(255, 231, 181); 
+    height:100%;
+}
+/* HEADER START */
+header{
+    text-align: center;
+    background-color: rgb(206, 144, 0);
+    border: 2px solid rgb(3, 3, 3);
+    height:135px;
+}
+header>img{
+    width: auto;
+    height: 135px;
+}
+header>p{
+    display: inline;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36pt;
+    color: black;
+    font-weight: bold;
+}
+/* HEADER FINISH */
+
+/* NAVIGATION START */
+nav{
+    border: 2px solid rgb(3, 3, 3);
+    display: inline-block;
+    width: fit-content;
+    background-color: rgb(206, 144, 0);   
+    padding: 10px;
+}
+nav ul{
+    padding-inline-start: 0px;
+    padding: none;
+    list-style-type: none;
+}
+nav a{
+    text-align: center;
+    font-size: 15;
+    font-weight: bold; 
+    border-radius: 7px;
+    text-decoration: none;
+    margin-bottom: 20%;
+    background-color: rgb(255, 231, 181); 
+    color: black; 
+    display: block; 
+    padding: 10px;
+    float: left;
+    display: block;
+    width: 121px;
+    border: 2px solid rgb(3, 3, 3);
+}
+ul{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+
+}
+nav a:hover{
+    background-color:rgb(224, 194, 129);
+}
+
+/* NAVIGATION FINISH */
+
+main{
+    margin-left:5px;
+    margin-right: 5px;
+    border:  solid rgb(3, 3, 3);
+    
+    width: 80%;
+    background-color: rgb(255, 231, 181); 
+    display: inline-block;
+}
+
+
+.rightImg, .main{
+    float: right;
+}
+.nav, .center, .leftImg{
+    float:left;
+}
+.leftImg{
+    border-right:  solid rgb(3, 3, 3);
+}
+.rightImg{
+    border-left:  solid rgb(3, 3, 3);
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+    margin-top:5px;
+    background-color: rgb(206, 144, 0);
+    border: 2px solid rgb(3, 3, 3);
+}
+br{
+    clear:both;
+}

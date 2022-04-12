@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--Made By OLEG KOVALCHUK 2106398-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Assets/css/new.css">
+    <link rel="stylesheet" href="assets/CSS/OLEG1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+
+    <script>
+        function playMusic(){
+            alert("This is the part where the music should play/pause")
+        }
+        function test(){
+            /*x is the variable name, that stores all of that(document.getElementById...)*/
+            x= document.getElementById('number').value
+            /*slight code inneficiency but I hope it's ok*/
+            q1 = document.getElementById('questionOne')
+            q2 = document.getElementById('questionTwo')
+            q3 = document.getElementById('questionThree')
+            q4 = document.getElementById('questionFour')
+            q5 = document.getElementById('questionFive')
+            qArray = [q1,q2,q3,q4,q5]
+            tempArrayA=["1","2","3","4","5"]
+            tempArrayB=[1,2,3,4,5]
+            temp = 0
+ 
+            /*Hides the questions form*/
+            if(x!="TBC"){document.getElementById('first').style.display="none"
+            document.getElementById('important').style.display="block"}
+            
+            /*Based on your choice shows that ammount of questions*/
+            document.getElementById('second').style.display="block"
+            for(i = 0;i<tempArrayA.length;i++){
+                if(tempArrayA[i]==x){
+                    temp=tempArrayB[i]
+                }
+            }
+                for(i=0;i<temp;i++){
+                    qArray[i].style.display="inline-block";
+                }
+                for(count=temp;count<qArray.length;count++){
+                    qArray[count].style.display="none";
+                }
+            
+            
+        }
+        function findScore(){
+            score = 0
+            answers = ["piano","violin","harp","trumpet","piano"]
+            /*OI! Get off my land! Stop cheating!*/
+            q1 = document.getElementById('q1').value
+            q2 = document.getElementById('q2').value
+            q3 = document.getElementById('q3').value
+            q4 = document.getElementById('q4').value
+            q5 = document.getElementById('q5').value
+            qArray=[q1,q2,q3,q4,q5]
+            for(i=0; i<temp; i++){
+                
+                if(answers[i]==qArray[i]){score++}
+            }
+            document.getElementById('second').style.display="none"
+            alert("Your score is "+score+" out of " +temp )
+            if(confirm("Another game?")==true){
+                document.getElementById('first').style.display="inline-block"
+            }
+        }
+/*Use user input to determin their score
+*/
+
+
+    </script>
+</head>
+<body>
+    
+    
+    <header >
+        <img class="leftImg" src="assets/images/logo.jpg" >
+        <p >Guessing Game</p>
+        
+        <img class="rightImg" src="assets/images/music.jpg" onclick="playMusic()" >
+        
+    </header>
+    <br>
+    <nav class="nav">
+            
+        <!-- vertical Menu -->
+        <ul>
+            <li><a href="homepage.html" class="active">Home page</a></li>
+            <li><a href="members.html" class="active">Current Members</a></li>
+            <li><a href="gallery.html" class="active">Images Gallery</a></li>
+            <li><a href="contacUs.html" class="active">Contact Us</a></li>
+            <li><a href="events.html" class="active">Events </a></li>
+            <li><a href="joinUs.html" class="active">Join Us</a></li>
+            <li><a href="guessingGame.html" class="active">Guessing Game</a></li>
+            <li><a href="instruments.html" class="active">Instuments</a></li>
+        </ul>
+
+    </nav>
+    
+    <main> 
+        <form id="first">
+            <label for="Question">How many questions do you wish to guess?</label><br>
+            <select name="options" id="number">
+                <option value="TBC">Press here:</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br>
+            <button type="reset" onclick="test()">Submit and start</button>
+        </form>
+
+
+        
+        <form id="second">
+        <!--Find a way to stop the sound to prevent overlapping-->
+        <div id="questionOne"><label for="Question1">Listen to the piece of music and choose what you hear: </label> <br><!--This is where options will go-->
+        <audio controls src="assets/Audio/7NzfqEng5azg.128.mp3"></audio>
+        <select  name="question1" id="q1">
+            <option value="q1A">Question 1 answer</option>
+            <option value="piano">Piano</option>
+            <option value="violin">Violin</option>
+            <option value="harp">Harp</option>
+            <option value="trumpet">Trumpet</option>
+        </select>
+        </div>
+        
+        <div id="questionTwo"><label for="Question2">Listen to the piece of music and choose what you hear: </label><br><!--This is where options will go-->
+        <audio controls src="assets/Audio/DFEu3DuUMlca.128.mp3"></audio>
+        <select name="question2" id="q2">
+            <option value="q2A">Question 2 answer</option>
+            <option value="piano">Piano</option>
+            <option value="violin">Violin</option>
+            <option value="harp">Harp</option>
+            <option value="trumpet">Trumpet</option>
+        </select>
+        </div>
+
+        <div id="questionThree"><label for="Question2">Listen to the piece of music and choose what you hear: </label><br><!--This is where options will go-->
+        <audio controls src="assets/Audio/L3NCMq5BrjFn.128.mp3"></audio>
+        <select name="question3" id="q3">
+            <option value="q3A">Question 3 answer</option>
+            <option value="piano">Piano</option>
+            <option value="violin">Violin</option>
+            <option value="harp">Harp</option>
+            <option value="trumpet">Trumpet</option>
+        </select>
+        </div>
+
+        <div id="questionFour"><label for="Question2">Listen to the piece of music and choose what you hear: </label><br><!--This is where options will go-->
+        <audio controls src="assets/Audio/X7oGLAa2uLcS.128.mp3"></audio>
+        <select name="question4" id="q4">
+            <option value="q4A">Question 4 answer</option>
+            <option value="piano">Piano</option>
+            <option value="violin">Violin</option>
+            <option value="harp">Harp</option>
+            <option value="trumpet">Trumpet</option>
+        </select>
+        </div>
+
+        <div id="questionFive"><label for="Question2">Listen to the piece of music and choose what you hear: </label><br><!--This is where options will go-->
+        <audio controls src="assets/Audio/YxFxnKR5EfhM.128.mp3"></audio>
+        <select name="question5" id="q5">
+            <option value="q5A">Question 5 answer</option>
+            <option value="piano">Piano</option>
+            <option value="violin">Violin</option>
+            <option value="harp">Harp</option>
+            <option value="trumpet">Trumpet</option>
+        </select>
+        </div>
+
+       <div  id="important"><br> <button type="reset" onclick="findScore()">(Press me to submit)</button></div>
+
+    </form>
+
+    </main>
+    <br>
+    <footer>Foxtrot copy right © 2022<footer>
+</body>
+</html>

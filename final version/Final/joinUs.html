@@ -1,0 +1,147 @@
+<html>
+<!--Made By MOHAMED ABDELLAH 2118775-->
+    <head>
+        <!-- Page Title -->
+        <title>Contac Us</title>
+
+        <!-- Stylesheet Import -->
+        <link rel='stylesheet' href='Assets/CSS/MOHAMED3.css'>
+        <link rel='stylesheet' href='Assets/CSS/MOHAMED4.css'>
+        
+         <!-- JS Import -->
+        <script src="Assets/JS/MOHAMED2.js"></script>
+        
+    </head>
+
+    <body>
+        <header >
+            <!-- Logo and Title -->
+            <p style="text-align: center;">Join US</p>
+            <img src="Assets/Images/logo.jpg" id='img1'>
+           
+            <button onclick="udioButton"><img src="Assets/Images/music.jpg" id='img2'></button>
+            
+            <script>
+                let audioButton = document.querySelector('.audio-button');   // <-- Change CSS Class Here
+                       audioButton.addEventListener('click', function(){
+                        var audio = document.getElementById("audio");
+                
+                         if (audio.paused) {
+                            audio.play();
+                        }else{
+                            audio.pause();
+                            // audio.currentTime = 0
+                        }
+                      });
+                    </script>
+                
+                    <audio id="audio" src="music library/1.mp3"></audio>
+
+
+
+        </header>
+
+        <main>
+            <!-- Main Page content-->
+           
+            <img src="Assets/Images/img55.jpg" id='img5' class="blink-image">
+            <img src="Assets/Images/img44.jpg" id='img4'>
+            <img src="Assets/Images/img77.jpg" id='img7'>
+
+            <aside id='col2'>
+               
+                    <p style="background-color: rgb(255, 231, 181);padding: 2px; text-align: center; border: 2px solid rgb(3, 3, 3); border-top-left-radius: 7px;
+                        border-top-right-radius: 7px;
+                        border-bottom-left-radius: 7px;
+                        border-bottom-right-radius: 7px; font-weight: bolder;">SUBSCRIBE TO OUR NEWSLETTER</p>
+                   
+                    <p style="padding: 5px; font-size: large; text-align: justify;">Provide your email address to subscribe to our Newsletter, events and last update. You can change your mind at 
+                        any time by clicking the unsubscribe link in the footer of any email you receive from us, or by contacting us at 
+                        info.cms@rgu.ac.uk.</p>
+                        <br>
+                    <div class="container">
+                        <form onsubmit="return handle_form_subscribe()">
+                              
+                                  <label for="fname">Your Email *</label>
+                                  <input type="text" id="fname" name="firstname" placeholder="Your Email..">
+                              <br>
+                               <br>
+                                  <input type="submit" id="subscribe" value="Subscribe" >     
+                        </form>    
+                    </div>
+                      
+                        <img src="Assets/Images/img33.jpg" id='img3'>
+            </aside>
+
+            
+            <aside id='col1'>
+                 
+                  <p style="background-color: rgb(255, 231, 181);padding: 2px; text-align: center; border: 2px solid rgb(3, 3, 3); border-top-left-radius: 7px;
+                        border-top-right-radius: 7px;
+                        border-bottom-left-radius: 7px;
+                        border-bottom-right-radius: 7px; font-weight: bolder;">MEMBERSHIP 2022/23 SEASON </p>
+                  <p>We are pleased to be able to announce that membership of the Society is now open, to join us please complete 
+                            the form below.</p>
+                 
+                   <p style="color: red;">Required field *</p>
+                        <br>
+                       
+               <div class="container">
+                    <form onsubmit="return handle_form_submission()">
+                      <nobr>
+                        <label for="fname">First Name *</label>   &ensp;  &ensp;
+                        <input type="text" id="fname" name="firstname" placeholder="First name..">
+                            
+                        
+                        &ensp;&ensp;<label for="fname">last Name *</label><sp></sp>
+                        &ensp;<input type="text" id="fname" name="firstname" placeholder="last name..">
+                      </nobr>
+                          
+                      <br>
+                          <label for="fname">Date of Birth </label>
+                          &ensp;&ensp;&ensp;<input type="text" id="fname" name="firstname" placeholder="DD/MM/YYYY">
+                          <label for="fname">Year of study *</label>
+                          <input type="text" id="fname" name="firstname" placeholder="YYYY">
+                      <br>
+                      <label for="fname">School name *</label>
+                      &ensp;&ensp;<input type="text" id="fname" name="firstname" placeholder="School name..">
+                      <label for="fname">Student Num *</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Student Num..">
+                      <br>
+                      <label for="fname">Email address *</label>&ensp;
+                      <input type="text" id="fname" name="firstname" placeholder="Email address..">
+                      <label for="fname">Contact Num</label>&ensp;
+                      <input type="text" id="fname" name="firstname" placeholder="+44...">
+                      <br> 
+                      <br>
+
+                      <input type="submit" value="submit" >     
+                    </form>    
+               </div>
+               <img src="Assets/Images/img66.jpg" id='img6'>
+            </aside>
+            
+
+        </main>
+
+        <aside id='side'>
+            <!-- vertical Menu -->
+            <div class="vertical-menu">
+                <a href="homepage.html" class="active">Home page</a>
+                <a href="members.html" class="active">Current Members</a>
+                <a href="gallery.html" class="active">Images Gallery</a>
+                <a href="contacUs.html" class="active">Contact Us</a>
+                <a href="events.html" class="active">Events </a>
+                <a href="joinUs.html" class="active">Join Us</a>
+                <a href="guessingGame.html" class="active">Guessing Game</a>
+                <a href="instruments.html" class="active">Instuments</a>
+            </div>
+
+        </aside>
+
+        <footer id='footer'>
+            <p id='text1'>Foxtrot copy right © 2022</p>
+        </footer>
+
+    </body>
+</html>

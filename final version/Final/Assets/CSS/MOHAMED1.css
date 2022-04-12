@@ -1,0 +1,177 @@
+body {
+    background-color: rgb(255, 231, 181);
+    height: 100%;
+}
+
+
+
+/* Title and Logo */
+header {
+    background-color: rgb(206, 144, 0);
+    width: 1346px;
+    height: 110px;
+    padding: 5px;
+    border: 2px solid rgb(3, 3, 3);
+    position: relative;
+    top: -5px;
+    left: 160px;
+}
+
+#img1 {
+    border: 2px solid rgb(3, 3, 3);
+    width: 160px;
+    height: 121px;
+    position: absolute;
+    left: -169px;
+    top: -3px;      
+}
+
+#img2 {
+    border: 2px solid rgb(3, 3, 3);
+    width: 150px;
+    height: 121px;
+    position: absolute;
+    top: -3px;
+    right: -159px;   
+}
+
+#img3 {
+    width: 300px;
+    height: 70px;
+    position: absolute;
+    top: 520px;
+    right: 25%;  
+    left: 3%
+}
+
+#img5 {
+    width: 190px;
+    height: 110px;
+    position: absolute;
+    top: -125px;
+    right: 45%;  
+    left:55%; 
+}
+
+#img6 {
+    width: 350px;
+    height: 650px;
+    position: absolute;
+    top: 5px;
+    right: 52%;  
+    left:47%; 
+}
+
+header p {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-size: 36pt;
+    color: black
+    
+}
+
+.active {
+    background-color: rgb(206, 144, 0);
+}
+
+/* Main Body Styling */
+main {
+    background-color: white;
+    border: 2px solid rgb(3, 3, 3);
+    width: 1513px; 
+    height: 671px;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: 160px;
+}
+
+#colour1 {
+    background-color: rgb(206, 144, 0);
+}
+.vertical-menu {
+   width: 210px; /* Set a width if you like */
+   position: relative;
+   top: 20px;
+   left: 2px;
+}
+  
+.vertical-menu a {
+   background-color: #eee; /* Grey background color */
+   color: black; /* Black text color */
+   display: block; /* Make the links appear below each other */
+   padding: 12px; /* Add some padding */
+   text-decoration: none; /* Remove underline from links */
+}
+  
+.vertical-menu a.active:hover {
+   background-color:rgb(224, 194, 129); /* Dark grey background on mouse-over */
+}
+  
+  .vertical-menu a.active {
+    background-color: rgb(255, 231, 181); /* Add a green color to the "active/current" link */
+    color: rgb(0, 0, 0);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    width: 120px;
+    margin-bottom: 18%;
+    font-size: 15;
+    font-weight: bold;     
+}
+
+ 
+
+
+#footer {
+    background-color: rgb(206, 144, 0);
+    width: 1670px; 
+    height: 25px;
+    padding: 2px;
+    border: 2px solid rgb(3, 3, 3);
+    position: absolute;
+    margin-top: 675px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#text1{
+margin: 5px;
+position: relative;
+margin-bottom: 50%;
+}
+
+#side {
+    background-color: rgb(206, 144, 0);
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    border: 2px solid rgb(3, 3, 3);
+    position: absolute;
+    left: 1px;
+    top: 129px;
+}
+
+#col1 {
+    background-color: white;
+    width: 600px;
+    height: 630px;
+    padding: 5px;
+    margin-bottom: auto;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+
+#col2 {
+    padding: 10px;
+    width: 20%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    right: 1%;
+}
+

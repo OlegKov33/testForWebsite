@@ -1,0 +1,20 @@
+#name1
+{
+    display: none;
+}
+#name2
+{
+    display: none;
+}
+#name3
+{
+    display: none;
+}
+#name4
+{
+    display: none;
+}
+main p:hover{
+    color: black;
+    background-color:rgb(224, 194, 129);
+}
