@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--Made By OSTIN MATHIAS 2015862-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/ostin2.css">
+    <link rel="stylesheet" href="assets/css/names.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <header >
+        <img class="leftImg" src="assets/images/logo.jpg" >
+        <p>Current Members</p>
+        
+        <img class="rightImg" src="assets/images/music.jpg" >
+    </header>
+    <br>
+    <nav class="nav">
+            
+        <!-- vertical Menu -->
+        <ul>
+            <li><a href="homepage.html" class="active">Home page</a></li>
+            <li><a href="members.html" class="active">Current Members</a></li>
+            <li><a href="gallery.html" class="active">Images Gallery</a></li>
+            <li><a href="contacUs.html" class="active">Contact Us</a></li>
+            <li><a href="events.html" class="active">Events </a></li>
+            <li><a href="joinUs.html" class="active">Join Us</a></li>
+            <li><a href="guessingGame.html" class="active">Guessing Game</a></li>
+            <li><a href="instruments.html" class="active">Instuments</a></li>
+        </ul>
+
+    </nav>
+
+    <script>
+
+        function name1()
+        {
+            if (document.getElementById("name1").style.display === "none")
+            {
+
+                document.getElementById("name2").style.display = "none";
+                document.getElementById("name3").style.display = "none";
+                document.getElementById("name4").style.display = "none";
+                document.getElementById("name1").style.display = "inline-block";
+            } 
+            else 
+            {
+                document.getElementById("name1").style.display = "none";
+            }
+        }
+        function name2()
+        {
+            if (document.getElementById("name2").style.display === "none")
+            {
+                document.getElementById("name1").style.display = "none";
+                document.getElementById("name3").style.display = "none";
+                document.getElementById("name4").style.display = "none";
+                document.getElementById("name2").style.display = "inline-block";
+            } 
+            else 
+            {
+                document.getElementById("name2").style.display = "none";
+            }
+        }
+        function name3()
+        {
+            if (document.getElementById("name3").style.display === "none")
+            {
+                document.getElementById("name1").style.display = "none";
+                document.getElementById("name2").style.display = "none";
+                document.getElementById("name4").style.display = "none";
+                document.getElementById("name3").style.display = "inline-block";
+            } 
+            else 
+            {
+                document.getElementById("name3").style.display = "none";
+            }
+        }
+        function name4()
+        {
+            if (document.getElementById("name4").style.display === "none")
+            {
+                document.getElementById("name1").style.display = "none";
+                document.getElementById("name2").style.display = "none";
+                document.getElementById("name3").style.display = "none";
+                document.getElementById("name4").style.display = "inline-block";
+            } 
+            else 
+            {
+                document.getElementById("name4").style.display = "none";
+            }
+        }
+
+    </script>
+    
+    <main>
+        <p onclick="name1()"> 
+            ⦿ Norvin Razario 
+        </p>
+        <p onclick="name2()">
+            ⦿ Oleg Kovalchuk 
+        </p>
+        <p onclick="name3()">
+            ⦿ Ostin Mathias 
+        </p>
+        <p onclick="name4()">
+            ⦿ Mohamed Abdellah 
+        </p>
+
+        <center>
+        <div id="name1">
+           <img src="assets/images/Screenshot (27).png">
+           <h2>Norvin Razario</h2>
+           <h2>Head Of Social Media</h2>
+           <h3>Contact Details:</h3>
+           <h3>Email:n.razario@rgu.ac.uk</h3>
+        </div>
+        <div id="name2">
+            <img src="assets/images/Screenshot (27).png">
+            <h2>Oleg Kovalchuk</h2>
+           <h2>President</h2>
+           <h3>Contact Details:</h3>
+           <h3>Email:o.kovalchuk@rgu.ac.uk</h3>
+        </div>
+        <div id="name3">
+            <img src="assets/images/Screenshot (27).png">
+            <h2>Ostin Mathias</h2>
+           <h2>Head Of Members</h2>
+           <h3>Contact Details:</h3>
+           <h3>Email:o.mathias@rgu.ac.uk</h3>
+        </div>
+        <div id="name4">
+            <img src="assets/images/Screenshot (27).png">
+            <h2>Mohamed Abdellah</h2>
+           <h2>Vice-President</h2>
+           <h3>Contact Details:</h3>
+           <h3>Email:m.abdellah@rgu.ac.uk</h3>
+        </div>
+    </center>
+    </main>
+
+    <br>
+    <footer>Foxtrot Copyright©️ 2022<footer>
+</body>
+</html>

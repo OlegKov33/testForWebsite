@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--Made By OLEG KOVALCHUK 2106398-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Assets/css/new.css">
+    <link rel="stylesheet" href="Assets/CSS/OLEG1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+
+    <script>
+    function playMusic(){
+        alert("This is the part where the music should play/pause")
+    }
+    function forTwitter() {
+        x = document.getElementById("twitter");
+        if (x.style.display === "none") {
+            x.style.display = "inline-block";
+        } else {
+             x.style.display = "none";
+    }}
+    function forLinkedIn() {
+        y = document.getElementById("linkedIn");
+        if (y.style.display === "none") {
+            y.style.display = "inline-block";
+        } else {
+            y.style.display = "none";
+    }}
+    function forFacebook() {
+        z = document.getElementById("facebook");
+        if (z.style.display === "none") {
+            z.style.display = "inline-block";
+        } else {
+            z.style.display = "none";
+    }}
+    function forTikToc() {
+        t = document.getElementById("tiktoc");
+        if (t.style.display === "none") {
+            t.style.display = "inline-block";
+        } else {
+            t.style.display = "none";
+    }}
+
+
+    </script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v13.0" nonce="I6HQY3G1"></script>
+    
+    <header >
+        <img class="leftImg" src="assets/images/logo.jpg" >
+        <p >Events</p>
+        <img class="rightImg" src="assets/images/music.jpg" onclick="playMusic()" >
+    </header>
+    <br>
+    <nav class="nav">
+            
+        <!-- vertical Menu -->
+        <ul>
+            <li><a href="homepage.html" class="active">Home page</a></li>
+            <li><a href="members.html" class="active">Current Members</a></li>
+            <li><a href="gallery.html" class="active">Images Gallery</a></li>
+            <li><a href="contacUs.html" class="active">Contact Us</a></li>
+            <li><a href="events.html" class="active">Events </a></li>
+            <li><a href="joinUs.html" class="active">Join Us</a></li>
+            <li><a href="guessingGame.html" class="active">Guessing Game</a></li>
+            <li><a href="instruments.html" class="active">Instuments</a></li>
+        </ul>
+
+    </nav>
+    
+    <main>
+        <!--Buttons to show/hide elements-->
+        <div class="controls">
+        <p>Press buttons to show or hide different platforms</p>
+        
+        <button onclick="forTwitter()">Twitter Toggle</button>
+        <button onclick="forLinkedIn()">LinkedIn Toggle</button>
+        <button onclick="forFacebook()">Facebook Toggle</button>
+        <button onclick="forTikToc()">Tik Tok Toggle</button>
+        </div>
+        
+        <!--Add ability to choose what to display Maybe a form with things in it?-->
+        <div id="everything">
+        <div id="twitter"><a class="twitter-timeline" data-width="250" data-height="400" href="https://twitter.com/BirrFestofMusic?ref_src=twsrc%5Etfw">Tweets by BirrFestofMusic</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+        
+        <div id="linkedIn"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6914235308284805121" height="400" width="auto" frameborder="0" allowfullscreen="" title="Embedded post"></iframe></div>
+        
+        <div id="facebook"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FClassical.Mussic&tabs=timeline&width=340&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+        
+        <div id="tiktoc"> <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@classicalmusiclove" data-unique-id="classicalmusiclove"  data-embed-type="creator" style="max-width: 720px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@classicalmusiclove?refer=creator_embed">@classicalmusiclove</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></div>
+    </div>
+    </main>
+    <br>
+    <footer>Foxtrot copy right © 2022<footer>
+</body>
+</html>
